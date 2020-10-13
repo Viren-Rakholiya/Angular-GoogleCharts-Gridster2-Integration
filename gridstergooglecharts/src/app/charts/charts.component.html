@@ -1,0 +1,10 @@
+<div style="float: left; margin:15px">
+    <!-- <google-chart #chart [title]="charts.title" [type]="charts.type" [data]="charts.data"
+      [columnNames]="charts.columnName" [options]="charts.options" width="32%" height="400px">
+    </google-chart> -->
+    {{charts | json}}
+    <google-chart [title]="charts.title" [type]="charts.type" [data]="charts.data" [width]="width"
+    [columnNames]="charts.columnNames" [height]="height" [options]="charts.options" ></google-chart>
+
+
+  </div>

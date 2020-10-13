@@ -1,0 +1,11 @@
+<div style="height: 800px;">
+    <gridster [options]="options">
+      <gridster-item [item]="item" *ngFor="let item of dashboard; trackBy: trackBy">
+  
+        <app-charts [charts]="item.dataOfCharts"></app-charts>
+        
+        
+
+      </gridster-item>
+    </gridster>
+  </div>
